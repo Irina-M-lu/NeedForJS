@@ -43,17 +43,40 @@ table {
 }
 
 
+/*button:hover {
+	background-color: #3CB371;
+}*/
+
 .hide {
 display: none;
+}
+
+#topScore {
+	position: fixed;
+	background-color: #90EE90;
+	color: whitesmoke;
+	bottom: 0;
+	height: 50px;
+	width: 50px;
+	padding: 80px;
+	font-size: 30px;
+	text-align: center;
 }
 
 .car, .enemy {
   width: 50px;
   height: 100px;
-  background: transparent url('./image/player2.png') center / cover no-repeat;
+  background: transparent url('./image/player.png') center / cover no-repeat;
   position: absolute;
-  left: 125px;
-  bottom: 10px;
+
+}
+
+.game {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	-ms-align-self: center;
+	align-self: center;
 }
 
 .gameArea {
@@ -65,10 +88,42 @@ display: none;
   overflow: hidden;
 }
 
+
 .line {
   position: absolute;
   width: 10px;
-  height: 50px;
   background: #fff;
   left: 145px;
+}
+
+.start {
+position: absolute;
+margin: 0;
+left: 0;
+top: 0;
+padding: 2rem 0;
+text-align: center;
+z-index: 200;
+background-color: #90EE90;
+width: 100%;
+font-size: 20px;
+font-family: sans-serif;
+}
+
+.score {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #000;
+	padding: 1rem 0;
+	z-index: 200;
+	font-size: 20px;
+	color: #00BFFF;
+	text-align: center;
+	font-family: sans-serif;
+}
+
+.btn {
+	padding: 10px 30px;
 }
